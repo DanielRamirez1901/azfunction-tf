@@ -53,7 +53,7 @@ resource "azurerm_function_app_function" "faf" {
   # Se carga el código de ejemplo dentro de la función
   file {
     name    = "index.js"
-    content = file("example/index.js")
+    content = file("index.js")
   }
   # Se define el payload para los test
   test_data = jsonencode({
